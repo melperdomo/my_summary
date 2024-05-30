@@ -1,0 +1,70 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Ubuntu+Mono:wght@700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh; /*essa propriedade ajusta o conteúdo para o tamanho total da tela do usuário.*/
+    box-sizing: border-box; /*essa propriedade controla o tamanho dos filhos, para que eles não vazem.*/
+    background-color: #1B2338;
+    color: whitesmoke;
+}
+
+h1 {
+    font-weight: bold;
+}
+
+.conteudo__texto__titulo__destaque {
+    color: #fce592;
+}
+
+.conteudo {
+    display: flex; /*essa propriedade, coloca os filhos em flexbox, modo display flexível. Por default, os itens ficam em linha, no topo.*/
+    align-items: center; /*essa propriedade, alinha os filhos, no centro da página.*/
+    justify-content: space-between;
+    margin: 2% 10%;
+}
+
+.conteudo__texto {
+    width: 615px;
+    height: 482px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    padding-top: 90px;
+}
+
+.conteudo__texto__titulo {
+    font-size: 38px;
+    font-family: "Ubuntu Mono", monospace;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.conteudo__texto__subtitulo {
+    font-size: 24px;
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.conteudo__links {
+    display: flex;
+    justify-content: space-between;
+}
+
+.conteudo__links__link {
+    background-color: #fce592;
+    width: 280px;
+    border-radius: 16px;
+    text-decoration: none;
+    text-align: center;
+    font-size: 24px;
+    padding: 21.5px 0;
+    font-family: "Ubuntu Mono", monospace;
+    color: #0D1010;
+}
