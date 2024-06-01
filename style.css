@@ -2,6 +2,12 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Lato&family=Ubuntu+Mono:wght@700&display=swap');
 
+:root {
+    --cor1: #fce592;
+    --cor2: #1B2338;
+    --cor3: #0D1010;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -10,7 +16,7 @@
 body {
     height: 100vh; /*essa propriedade ajusta o conteúdo para o tamanho total da tela do usuário.*/
     box-sizing: border-box; /*essa propriedade controla o tamanho dos filhos, para que eles não vazem.*/
-    background-color: #1B2338;
+    background-color: var(--cor2);
     color: whitesmoke;
 }
 
@@ -19,7 +25,7 @@ h1 {
 }
 
 .conteudo__texto__titulo__destaque {
-    color: #fce592;
+    color: var(--cor1);
 }
 
 .conteudo {
@@ -52,13 +58,17 @@ h1 {
     font-style: normal;
 }
 
+.conteudo__texto__subtitulo__destaque{
+    color: var(--cor1);
+}
+
 .conteudo__links {
     display: flex;
     justify-content: space-between;
 }
 
 .conteudo__links__link {
-    background-color: #fce592;
+    background-color: var(--cor1);
     width: 280px;
     border-radius: 16px;
     text-decoration: none;
@@ -66,5 +76,5 @@ h1 {
     font-size: 24px;
     padding: 21.5px 0;
     font-family: "Ubuntu Mono", monospace;
-    color: #0D1010;
+    color: var(--cor3);
 }
