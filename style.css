@@ -1,6 +1,6 @@
 @charset "UTF-8";
 
-@import url('https://fonts.googleapis.com/css2?family=Lato&family=Ubuntu+Mono:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inria+Sans&family=JetBrains+Mono:wght@700&display=swap');
 
 :root {
     --cor1: #fce592;
@@ -16,26 +16,37 @@
 }
 
 body {
-    height: 100vh; /*essa propriedade ajusta o conteúdo para o tamanho total da tela do usuário.*/
     box-sizing: border-box; /*essa propriedade controla o tamanho dos filhos, para que eles não vazem.*/
+    color: whitesmoke;
     background: url(./images/darkstar_bg.png) no-repeat top center;
     background-attachment: fixed;
-    color: whitesmoke;
+}
+
+.cabecalho {
+    padding: 2% 0 0 10%;
+}
+
+.cabecalho_menu_links {
+    padding: 0 20px 0 0;
+}
+
+.cabecalho_menu_links {
+    font-size: 24px;
+    font-family: "Inria Sans", sans-serif;
+    font-weight: 400;
+    color: var(--cor1);
 }
 
 h1 {
     font-weight: bold;
 }
 
-.conteudo__texto__titulo__destaque {
-    color: var(--cor1);
-}
-
 .conteudo {
-    display: flex; /*essa propriedade, coloca os filhos em flexbox, modo display flexível. Por default, os itens ficam em linha, no topo.*/
-    align-items: center; /*essa propriedade, alinha os filhos, no centro da página.*/
-    justify-content: space-between;
-    margin: 3% 10%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 40px;
+    margin: 5% 10%;
 }
 
 .conteudo__texto {
@@ -44,19 +55,23 @@ h1 {
     display: flex;
     flex-direction: column;
     gap: 40px;
-    padding-top: 90px;
 }
 
 .conteudo__texto__titulo {
-    font-size: 38px;
-    font-family: "Ubuntu Mono", monospace;
+    font-size: 34px;
+    font-family: "JetBrains", monospace;
+    font-optical-sizing: auto;
     font-weight: 700;
     font-style: normal;
 }
 
+.conteudo__texto__titulo__destaque {
+    color: var(--cor1);
+}
+
 .conteudo__texto__subtitulo {
     font-size: 24px;
-    font-family: "Lato", sans-serif;
+    font-family: "Inria Sans", sans-serif;
     font-weight: 400;
     font-style: normal;
 }
@@ -72,8 +87,9 @@ h1 {
 
 .conteudo__links__subtitulo {
     text-align: center;
-    font-family: "Ubuntu", monospace;
-    font-weight: 400;
+    font-family: "JetBrains Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: 700;
     font-style: normal;
     font-size: 24px;
     color: var(--cor1);
@@ -81,6 +97,8 @@ h1 {
 
 .conteudo__links__link {
     display: flex;
+    justify-content: center;
+    gap: 16px;
     width: 378px;
     background-color: var(--cor1);
     border: 3px solid var(--cor3);
@@ -88,12 +106,34 @@ h1 {
     text-decoration: none;
     text-align: center;
     font-size: 24px;
-    font-family: "Lato", sans-serif;
-    font-weight: bold;
+    font-family: "Inria Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
     color: var(--cor4);
     padding: 21.5px 0;
 }
 
-.rodape__destaque {
+.conteudo__links__link:hover {
+    background-color: var(--cor2);
+    border-color: var(--cor1);
+    color: var(--cor1);
+}
+
+.rodape {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;    
     color: var(--cor2);
+    background-color: var(--cor4);
+    text-align: center;
+    padding: 15px;
+    font-family: "Inria Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 24px;
+    margin-bottom: 0;
+}
+
+.rodape__destaque {
+    font-weight: bold;
 }
