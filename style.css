@@ -6,6 +6,8 @@
     --cor1: #fce592;
     --cor2: #1B2338;
     --cor3: #0D1010;
+    --cor4: #D15D64;
+    --cor5: #E98333;
 }
 
 * {
@@ -16,7 +18,8 @@
 body {
     height: 100vh; /*essa propriedade ajusta o conteúdo para o tamanho total da tela do usuário.*/
     box-sizing: border-box; /*essa propriedade controla o tamanho dos filhos, para que eles não vazem.*/
-    background-color: var(--cor2);
+    background: url(./images/darkstar_bg.png) no-repeat top center;
+    background-attachment: fixed;
     color: whitesmoke;
 }
 
@@ -32,7 +35,7 @@ h1 {
     display: flex; /*essa propriedade, coloca os filhos em flexbox, modo display flexível. Por default, os itens ficam em linha, no topo.*/
     align-items: center; /*essa propriedade, alinha os filhos, no centro da página.*/
     justify-content: space-between;
-    margin: 2% 10%;
+    margin: 3% 10%;
 }
 
 .conteudo__texto {
@@ -58,23 +61,39 @@ h1 {
     font-style: normal;
 }
 
-.conteudo__texto__subtitulo__destaque{
+.conteudo__links {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    gap: 15px; /* adiciona espaços iguais entre cada elemento */
+}
+
+.conteudo__links__subtitulo {
+    text-align: center;
+    font-family: "Ubuntu", monospace;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 24px;
     color: var(--cor1);
 }
 
-.conteudo__links {
-    display: flex;
-    justify-content: space-between;
-}
-
 .conteudo__links__link {
+    display: flex;
+    width: 378px;
     background-color: var(--cor1);
-    width: 280px;
+    border: 3px solid var(--cor3);
     border-radius: 16px;
     text-decoration: none;
     text-align: center;
     font-size: 24px;
+    font-family: "Lato", sans-serif;
+    font-weight: bold;
+    color: var(--cor4);
     padding: 21.5px 0;
-    font-family: "Ubuntu Mono", monospace;
-    color: var(--cor3);
+}
+
+.rodape__destaque {
+    color: var(--cor2);
 }
