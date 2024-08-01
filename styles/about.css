@@ -2,6 +2,10 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Inria+Sans&family=JetBrains+Mono:wght@700&display=swap');
 
+.cabecalho_menu_links:hover {
+    color: var(--cor5);
+}
+
 :root {
     --cor1: #fce592;
     --cor2: #1B2338;
@@ -22,33 +26,30 @@
 
 body {
     box-sizing: border-box; /*essa propriedade controla o tamanho dos filhos, para que eles não vazem.*/
-    color: whitesmoke;
     background: url(/assets/darkstar_bg.png) no-repeat top center;
     background-attachment: fixed;
-    background-size: cover;
 }
 
 .cabecalho {
     padding: 2% 0 0 10%;
+    color: var(--cor1);
+}
+
+.cabecalho_menu_links:hover {
+    color: #E98333;
+    text-decoration: none;
 }
 
 .cabecalho_menu_links {
     padding: 0 20px 0 0;
-    
-}
-
-.cabecalho_menu_links {
+    text-decoration: none;
     font-size: 24px;
     font-family: "Inria Sans", sans-serif;
     font-weight: 400;
     color: var(--cor1);
 }
 
-h1 {
-    font-weight: bold;
-}
-
-.conteudo {
+.sobre {
     display: flex;
     align-items: flex-start;
     justify-content: center;
@@ -56,74 +57,27 @@ h1 {
     margin: 3% 15% 10% 15%;
 }
 
-.conteudo__texto {
-    width: 615px;
-    height: 482px;
-    display: flex;
-    flex-direction: column;
-    gap: 40px;
-}
-
-.conteudo__texto__titulo {
-    font-size: 34px;
+.sobre_titulo {
+    color: var(--cor5);
+    font-size: 24px;
     font-family: "JetBrains", monospace;
     font-optical-sizing: auto;
     font-weight: 700;
     font-style: normal;
 }
 
-.conteudo__texto__titulo__destaque {
-    color: var(--cor1);
-}
-
-.conteudo__texto__subtitulo {
-    font-size: 24px;
+.sobre_texto {
+    color: whitesmoke;
+    text-align: justify;
+    font-size: 22px;
     font-family: "Inria Sans", sans-serif;
     font-weight: 400;
-    font-style: normal;
-}
-
-.conteudo__links {
+    font-style: normal;   
+    width: 700px;
+    height: 482px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     align-items: center;
-    text-align: center;
-    gap: 15px; /* adiciona espaços iguais entre cada elemento */
-}
-
-.conteudo__links__subtitulo {
-    text-align: center;
-    font-family: "JetBrains Mono", monospace;
-    font-optical-sizing: auto;
-    font-weight: 700;
-    font-style: normal;
-    font-size: 24px;
-    color: var(--cor1);
-}
-
-.conteudo__links__link {
-    display: flex;
-    justify-content: center;
-    gap: 16px;
-    width: 378px;
-    background-color: var(--cor1);
-    border: 3px solid var(--cor3);
-    border-radius: 16px;
-    text-decoration: none;
-    text-align: center;
-    font-size: 24px;
-    font-family: "Inria Sans", sans-serif;
-    font-weight: 700;
-    font-style: normal;
-    color: var(--cor4);
-    padding: 21.5px 0;
-}
-
-.conteudo__links__link:hover {
-    background-color: var(--cor2);
-    border-color: var(--cor1);
-    color: var(--cor1);
 }
 
 .rodape {
