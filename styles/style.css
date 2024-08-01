@@ -23,7 +23,7 @@
 body {
     box-sizing: border-box; /*essa propriedade controla o tamanho dos filhos, para que eles não vazem.*/
     color: whitesmoke;
-    background: url(/images/darkstar_bg.png) no-repeat top center;
+    background: url(/assets/darkstar_bg.png) no-repeat top center;
     background-attachment: fixed;
 }
 
