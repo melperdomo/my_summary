@@ -2,6 +2,32 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Inria+Sans&family=JetBrains+Mono:wght@700&display=swap');
 
+@media (max-width: 1200px) {
+    .conteudo {
+        flex-direction: column-reverse;
+        justify-content: center;
+        margin: 2%;
+        width: auto;
+    }
+
+    .cabecalho {
+        padding: 10% 0 0 10%;
+    }
+
+    .cabecalho_menu {
+        margin-left: 0;
+        justify-content: center;
+    }
+
+    .cabecalho_menu_links {
+        padding-right: 0;
+    }
+
+    .conteudo__texto {
+        width: auto;
+    }
+}
+
 .cabecalho_menu_links:hover {
     color: var(--cor5);
 }
@@ -31,19 +57,25 @@ body {
 }
 
 .cabecalho {
-    padding: 2% 0 0 10%;
+    padding: 2% 0 0 0;
     color: var(--cor1);
 }
 
+.cabecalho_menu {
+    display: flex;
+    align-content: flex-start;
+    margin-left: 15%;
+}
+
 .cabecalho_menu_links:hover {
-    color: #E98333;
+    color: var(--cor5);
     text-decoration: none;
 }
 
 .cabecalho_menu_links {
-    padding: 0 20px 0 0;
+    padding-right: 15%;
     text-decoration: none;
-    font-size: 24px;
+    font-size: 1.5rem;
     font-family: "Inria Sans", sans-serif;
     font-weight: 400;
     color: var(--cor1);
@@ -51,7 +83,7 @@ body {
 
 .conteudo {
     display: flex;
-    align-items: flex-start;
+    align-items: center;
     justify-content: center;
     gap: 40px;
     margin: 3% 15% 10% 15%;
@@ -59,15 +91,15 @@ body {
 
 .conteudo__texto {
     color: whitesmoke;
-    width: 615px;
-    height: 482px;
+    width: 80%;
+    height: 80%;
     display: flex;
     flex-direction: column;
-    gap: 40px;
+    gap: 2.5rem;
 }
 
 .conteudo__texto__titulo {
-    font-size: 34px;
+    font-size: 2.125rem;
     font-family: "JetBrains", monospace;
     font-optical-sizing: auto;
     font-weight: 700;
@@ -79,66 +111,70 @@ body {
 }
 
 .conteudo__texto__subtitulo {
-    font-size: 24px;
+    font-size: 1.5rem;
     font-family: "Inria Sans", sans-serif;
     font-weight: 400;
     font-style: normal;
 }
 
-.conteudo__links {
+.conteudo__navegacao {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
     text-align: center;
-    gap: 15px; /* adiciona espaços iguais entre cada elemento */
+    gap: 1rem; /* adiciona espaços iguais entre cada elemento */
 }
 
-.conteudo__links__subtitulo {
+.conteudo__navegacao__subtitulo {
     text-align: center;
     font-family: "JetBrains Mono", monospace;
     font-optical-sizing: auto;
     font-weight: 700;
     font-style: normal;
-    font-size: 24px;
+    font-size: 1.5rem;
     color: var(--cor1);
 }
 
-.conteudo__links__link {
+.conteudo__navegacao__link {
     display: flex;
     justify-content: center;
-    gap: 16px;
-    width: 378px;
+    gap: 1rem;
+    width: 50%;
     background-color: var(--cor1);
-    border: 3px solid var(--cor3);
-    border-radius: 16px;
+    border: 0.188rem solid var(--cor3);
+    border-radius: 1rem;
     text-decoration: none;
     text-align: center;
-    font-size: 24px;
+    font-size: 1.5rem;
     font-family: "Inria Sans", sans-serif;
     font-weight: 700;
     font-style: normal;
     color: var(--cor4);
-    padding: 21.5px 0;
+    padding: 1.344rem 0;
 }
 
-.conteudo__links__link:hover {
+.conteudo__navegacao__link:hover {
     background-color: var(--cor2);
     border-color: var(--cor1);
     color: var(--cor1);
+}
+
+.conteudo_imagem {
+    width: 50%;
 }
 
 .sobre {
     display: flex;
     align-items: flex-start;
     justify-content: center;
-    gap: 40px;
+    gap: 2.5rem;
     margin: 3% 15% 10% 15%;
 }
 
 .sobre_titulo {
     color: var(--cor5);
-    font-size: 24px;
+    font-size: 1.5rem;
     font-family: "JetBrains", monospace;
     font-optical-sizing: auto;
     font-weight: 700;
@@ -148,32 +184,30 @@ body {
 .sobre_texto {
     color: whitesmoke;
     text-align: justify;
-    font-size: 22px;
+    font-size: 1.375rem;
     font-family: "Inria Sans", sans-serif;
     font-weight: 400;
     font-style: normal;   
-    width: 700px;
-    height: 482px;
+    width: 43.75px;
+    height: 30.125rem;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
 .rodape {
-    display: flex;
-    align-items: flex-end;
-    justify-content: center;    
     color: var(--cor2);
     background-color: var(--cor4);
     text-align: center;
-    padding: 15px;
+    padding: 0.938rem;
     font-family: "Inria Sans", sans-serif;
     font-weight: 400;
     font-style: normal;
-    font-size: 20px;
+    font-size: 1.25rem;
     margin: 0;
 }
 
 .rodape__destaque {
     font-weight: bold;
 }
+
