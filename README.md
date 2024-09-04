@@ -1,6 +1,4 @@
-### Oiê! Eu sou a Mel, desenvolvedora de front-end e copywriter. 
-
-Desenvolvi esse projeto no curso de **Classes, Posicionamento e Flexbox** da [Alura](https://www.alura.com.br/).
+### Desenvolvi esse projeto no curso de "Classes, Posicionamento e Flexbox" da [Alura](https://www.alura.com.br/).
 
 Com ele, reforcei conchecimentos de:
 - Variáveis em CSS
