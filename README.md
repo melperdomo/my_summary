@@ -1,6 +1,6 @@
 ### Desenvolvi esse projeto no curso de "Classes, Posicionamento e Flexbox" da [Alura](https://www.alura.com.br/).
 
-Com ele, reforcei conchecimentos de:
+Com ele, reforcei conhecimentos de:
 - Variáveis em CSS
 - Pseudoclasses
 - Como trabalhar com mais de 1 página
