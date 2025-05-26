@@ -1,17 +1,24 @@
-### Desenvolvi esse projeto no curso de "Classes, Posicionamento e Flexbox" da [Alura](https://www.alura.com.br/).
+### Desenvolvi esse projeto no curso de "Classes, Posicionamento e Flexbox" da [Alura](https://www.alura.com.br/)
 
-Com ele, reforcei conhecimentos de:
-- Variáveis em CSS
-- Pseudoclasses
-- Como trabalhar com mais de 1 página
+A proposta é simples, mas poderosa: mostrar quem sou, minhas experiências, formações e habilidades em um único lugar — tudo com um design responsivo e foco na legibilidade.
 
-É claro que eu adicionei aquele toque especial, para o projeto ficar ainda mais bonito e com a minha cara!
+**O que você vai encontrar aqui**
+- *Um resumo sobre mim*
+- *Informações de contato*
+- *Habilidades técnicas*
+- *Formação acadêmica*
+- *Experiências profissionais*
 
-**Dá só uma olhada:**
+🛠️ **Tecnologias utilizadas**
+- *HTML5*
+- *CSS3*
+- *Git & GitHub*
+
+✨ **Você pode conferir a versão publicada no link abaixo**
 
 https://mel-summary.vercel.app/index.html
 
-#### E não esquece de me seguir.✨
+**Se quiser trocar uma ideia ou conferir mais do meu trabalho, fique à vontade para me chamar!** 😉
 
 [![Gmail Mel](https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:melissameira92@gmail.com)
 [![LinkedIn Mel](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/melissa-perdomo/)
